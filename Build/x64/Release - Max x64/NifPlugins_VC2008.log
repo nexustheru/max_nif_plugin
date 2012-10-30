@@ -1,0 +1,555 @@
+﻿Build started 10/30/2012 2:01:22 PM.
+     1>Project "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\NifPlugins_VC2008.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Release - Max x64\NifPlugins.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "x64\Release - Max x64\NifPlugins.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\include" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\NvTriStrip" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\TriStripper" /I"C:\Users\esmeralda\Documents\Visual Studio 2008\qhull\src" /I"C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\include" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon" /Zi /nologo /W3 /WX- /O2 /Ob2 /D NIFLIB_STATIC_LINK /D NDEBUG /D USE_BIPED /D WIN32 /D _WIN32_WINNT=0x0500 /D USE_NIFLIB_TEMPLATE_HELPERS /D NIFLIB_STATIC_LINK /D _WINDOWS /D _USRDLL /D _USE_MATH_DEFINES /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D _WINDLL /D _MBCS /GF /Gm- /EHa /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope- /Yc"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifPlugins\pch.h" /Fp"x64\Release - Max x64\NifPlugins.pch" /Fo"x64\Release - Max x64\\" /Fd"x64\Release - Max x64\vc100.pdb" /Gd /TP /FI"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifPlugins\pch.h" /errorReport:prompt ..\NifPlugins\pch.cpp /LD /Zm200 
+         pch.cpp
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\niutils.h(105): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\include" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\NvTriStrip" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\TriStripper" /I"C:\Users\esmeralda\Documents\Visual Studio 2008\qhull\src" /I"C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\include" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon" /Zi /nologo /W3 /WX- /O2 /Ob2 /D NIFLIB_STATIC_LINK /D NDEBUG /D USE_BIPED /D WIN32 /D _WIN32_WINNT=0x0500 /D USE_NIFLIB_TEMPLATE_HELPERS /D NIFLIB_STATIC_LINK /D _WINDOWS /D _USRDLL /D _USE_MATH_DEFINES /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D _WINDLL /D _MBCS /GF /Gm- /EHa /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope- /Yu"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifPlugins\pch.h" /Fp"x64\Release - Max x64\NifPlugins.pch" /Fo"x64\Release - Max x64\\" /Fd"x64\Release - Max x64\vc100.pdb" /Gd /TP /FI"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifPlugins\pch.h" /errorReport:prompt ..\NifProps\nifProps.cpp ..\NifProps\bhkBoxObj.cpp ..\NifProps\bhkCapsuleObj.cpp ..\NifProps\bhkHelperFuncs.cpp ..\NifProps\bhkHelperInterface.cpp ..\NifProps\bhkListObj.cpp ..\NifProps\bhkProxyObj.cpp ..\NifProps\bhkRigidBodyInterface.cpp ..\NifProps\bhkRigidBodyModifer.cpp ..\NifProps\bhkSphereObj.cpp ..\NifProps\Shader\NifShader.cpp ..\NifProps\Shader\shaderutil.cpp ..\NifProps\Modifier\BSDismemberSkin.cpp ..\NifFurniture\NifFurniture.cpp ..\NifExport\Animation.cpp ..\NifExport\Coll.cpp ..\NifExport\Config.cpp ..\NifExport\Exporter.cpp ..\NifExport\KfExport.cpp ..\NifExport\Mesh.cpp ..\NifExport\MtlTex.cpp ..\NifExport\NifExport.cpp ..\NifExport\Strips.cpp ..\NifExport\Util.cpp ..\NifExport\NvTriStrip\NvTriStrip.cpp ..\NifExport\NvTriStrip\NvTriStripObjects.cpp ..\NifExport\NvTriStrip\VertexCache.cpp ..\NifCommon\AnimKey.cpp ..\NifCommon\AppSettings.cpp ..\NifCommon\Hyperlinks.cpp ..\NifCommon\NifGui.cpp ..\NifCommon\NifPlugins.cpp ..\NifCommon\NifQHull.cpp ..\NifCommon\nimorph.cpp ..\NifCommon\niutils.cpp ..\NifPlugins\DllEntry.cpp ..\NifImport\ImportAnimation.cpp ..\NifImport\ImportCollision.cpp ..\NifImport\ImportLights.cpp ..\NifImport\ImportMeshAndSkin.cpp ..\NifImport\ImportMtlAndTex.cpp ..\NifImport\ImportSkeleton.cpp ..\NifImport\KfDialog.cpp ..\NifImport\KFImporter.cpp ..\NifImport\KFMImporter.cpp ..\NifImport\MaxNifImport.cpp ..\NifImport\NifDialog.cpp ..\NifImport\NIFImport.cpp /LD /Zm200 
+         nifProps.cpp
+         bhkBoxObj.cpp
+         bhkCapsuleObj.cpp
+         bhkHelperFuncs.cpp
+     1>..\NifProps\bhkHelperFuncs.cpp(102): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifProps\bhkHelperFuncs.cpp(122): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifProps\bhkHelperFuncs.cpp(853): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         bhkHelperInterface.cpp
+         bhkListObj.cpp
+         bhkProxyObj.cpp
+         bhkRigidBodyInterface.cpp
+         bhkRigidBodyModifer.cpp
+         bhkSphereObj.cpp
+         NifShader.cpp
+     1>..\NifProps\Shader\NifShader.cpp(916): warning C4244: 'initializing' : conversion from 'INT_PTR' to 'BOOL', possible loss of data
+     1>..\NifProps\Shader\NifShader.cpp(1368): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+     1>..\NifProps\Shader\NifShader.cpp(1371): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+     1>..\NifProps\Shader\NifShader.cpp(1378): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+     1>..\NifProps\Shader\NifShader.cpp(1381): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+     1>..\NifProps\Shader\NifShader.cpp(1386): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+         shaderutil.cpp
+         BSDismemberSkin.cpp
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(1760): warning C4101: 'but' : unreferenced local variable
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2195): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2203): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2206): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2209): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2217): warning C4018: '<' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2223): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\NifProps\Modifier\BSDismemberSkin.cpp(2454): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+         NifFurniture.cpp
+     1>..\NifFurniture\NifFurniture.cpp(186): warning C4244: 'argument' : conversion from 'const double' to 'float', possible loss of data
+     1>..\NifFurniture\NifFurniture.cpp(186): warning C4244: 'argument' : conversion from 'const double' to 'float', possible loss of data
+     1>..\NifFurniture\NifFurniture.cpp(186): warning C4244: 'argument' : conversion from 'const double' to 'float', possible loss of data
+         Animation.cpp
+     1>..\NifExport\Animation.cpp(1311): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1354): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1544): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1550): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1590): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1613): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1614): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Animation.cpp(1640): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1150) : see reference to function template instantiation 'int GetKeys<FloatKey,ILinFloatKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1153) : see reference to function template instantiation 'int GetKeys<FloatKey,IBezFloatKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1156) : see reference to function template instantiation 'int GetKeys<FloatKey,ITCBFloatKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1192) : see reference to function template instantiation 'int GetKeys<Vector3Key,ILinPoint3Key>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Vector3Key
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1195) : see reference to function template instantiation 'int GetKeys<Vector3Key,IBezPoint3Key>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Vector3Key
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1198) : see reference to function template instantiation 'int GetKeys<Vector3Key,ITCBPoint3Key>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Vector3Key
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1218) : see reference to function template instantiation 'int GetKeys<QuatKey,ILinRotKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1223) : see reference to function template instantiation 'int GetKeys<QuatKey,IBezQuatKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(175): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifExport\Animation.cpp(1284) : see reference to function template instantiation 'int GetKeys<QuatKey,ITCBRotKey>(Control *,std::vector<_Ty> &,Interval)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+         Coll.cpp
+     1>..\NifExport\Coll.cpp(92): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(92): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(126): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(126): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(126): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(128): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(128): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(262): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(554): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Coll.cpp(567): warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\NifExport\Coll.cpp(1805): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         Config.cpp
+     1>..\NifExport\Config.cpp(301): warning C4267: 'argument' : conversion from 'size_t' to 'DWORD', possible loss of data
+         Exporter.cpp
+     1>..\NifExport\Exporter.cpp(236): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+         KfExport.cpp
+     1>..\NifExport\KfExport.cpp(135): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Mesh.cpp
+     1>..\NifExport\Mesh.cpp(100): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(212): warning C4018: '<' : signed/unsigned mismatch
+     1>..\NifExport\Mesh.cpp(368): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(383): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(430): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(464): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(619): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\Mesh.cpp(696): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         MtlTex.cpp
+     1>..\NifExport\MtlTex.cpp(69): warning C4482: nonstandard extension used: enum 'Niflib::BSLightingShaderPropertyShaderType' used in qualified name
+     1>..\NifExport\MtlTex.cpp(83): warning C4482: nonstandard extension used: enum 'Niflib::TexClampMode' used in qualified name
+     1>..\NifExport\MtlTex.cpp(714): warning C4482: nonstandard extension used: enum 'Niflib::BSLightingShaderPropertyShaderType' used in qualified name
+         NifExport.cpp
+     1>..\NifExport\NifExport.cpp(260): warning C4244: 'initializing' : conversion from 'LRESULT' to 'int', possible loss of data
+         Strips.cpp
+     1>..\NifExport\Strips.cpp(97): warning C4267: 'argument' : conversion from 'size_t' to 'const unsigned int', possible loss of data
+     1>..\NifExport\Strips.cpp(121): warning C4267: 'argument' : conversion from 'size_t' to 'const unsigned short', possible loss of data
+     1>..\NifExport\Strips.cpp(158): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         Util.cpp
+         NvTriStrip.cpp
+     1>..\NifExport\NvTriStrip\NvTriStrip.cpp(252): warning C4267: '+=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStrip.cpp(256): warning C4267: '+=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStrip.cpp(322): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStrip.cpp(325): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStrip.cpp(346): warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+         NvTriStripObjects.cpp
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(97): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(273): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(301): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(442): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(722): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(727): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(772): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(785): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(895): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(972): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(983): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1039): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1368): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1395): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1401): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1436): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1577): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1580): warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1733): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifExport\NvTriStrip\NvTriStripObjects.cpp(1766): warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+         VertexCache.cpp
+         AnimKey.cpp
+     1>..\NifCommon\AnimKey.cpp(409): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifCommon\AnimKey.cpp(411): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifCommon\AnimKey.cpp(419): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifCommon\AnimKey.cpp(483): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\esmeralda\documents\visual studio 2010\projects\max_nif_plugin\nifcommon\AnimKey.h(149): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifCommon\AnimKey.cpp(438) : see reference to function template instantiation 'int GetKeys<FloatKey,ILinFloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>c:\users\esmeralda\documents\visual studio 2010\projects\max_nif_plugin\nifcommon\AnimKey.h(149): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifCommon\AnimKey.cpp(441) : see reference to function template instantiation 'int GetKeys<FloatKey,IBezFloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>c:\users\esmeralda\documents\visual studio 2010\projects\max_nif_plugin\nifcommon\AnimKey.h(149): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifCommon\AnimKey.cpp(444) : see reference to function template instantiation 'int GetKeys<FloatKey,ITCBFloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+         AppSettings.cpp
+         Hyperlinks.cpp
+         NifGui.cpp
+     1>..\NifCommon\NifGui.cpp(22): warning C4244: 'return' : conversion from 'LRESULT' to 'int', possible loss of data
+     1>..\NifCommon\NifGui.cpp(32): warning C4244: 'return' : conversion from 'LRESULT' to 'int', possible loss of data
+         NifPlugins.cpp
+     1>..\NifCommon\NifPlugins.cpp(77): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\NifCommon\NifPlugins.cpp(79): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\NifCommon\NifPlugins.cpp(81): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         NifQHull.cpp
+         nimorph.cpp
+         niutils.cpp
+     1>..\NifCommon\niutils.cpp(55): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifCommon\niutils.cpp(1013): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifCommon\niutils.cpp(1262): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+     1>..\NifCommon\niutils.cpp(1263): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+         DllEntry.cpp
+         ImportAnimation.cpp
+     1>..\NifImport\ImportAnimation.cpp(1337): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(987) : see reference to function template instantiation 'void MergeKeys<ILinFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(998) : see reference to function template instantiation 'void MergeKeys<IBezFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1008) : see reference to function template instantiation 'void MergeKeys<ITCBFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1020) : see reference to function template instantiation 'void MergeKeys<ILinRotKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1026) : see reference to function template instantiation 'void MergeKeys<IBezQuatKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1046) : see reference to function template instantiation 'void MergeKeys<ITCBRotKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1056) : see reference to function template instantiation 'void MergeKeys<ILinScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1062) : see reference to function template instantiation 'void MergeKeys<IBezScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(188): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 ..\NifImport\ImportAnimation.cpp(1067) : see reference to function template instantiation 'void MergeKeys<ITCBScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ILinFloatKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(987) : see reference to function template instantiation 'void MergeKeys<ILinFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=IBezFloatKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(998) : see reference to function template instantiation 'void MergeKeys<IBezFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ITCBFloatKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1008) : see reference to function template instantiation 'void MergeKeys<ITCBFloatKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ILinRotKey,
+                     U=QuatKey,
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1020) : see reference to function template instantiation 'void MergeKeys<ILinRotKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=IBezQuatKey,
+                     U=QuatKey,
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1026) : see reference to function template instantiation 'void MergeKeys<IBezQuatKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ITCBRotKey,
+                     U=QuatKey,
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1046) : see reference to function template instantiation 'void MergeKeys<ITCBRotKey,QuatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=Niflib::Key<Niflib::Quaternion>
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ILinScaleKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1056) : see reference to function template instantiation 'void MergeKeys<ILinScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=IBezScaleKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1062) : see reference to function template instantiation 'void MergeKeys<IBezScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(129): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(186) : see reference to function template instantiation 'void SetKeys<T,U>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     T=ITCBScaleKey,
+                     U=FloatKey,
+                     _Ty=FloatKey
+                 ]
+                 ..\NifImport\ImportAnimation.cpp(1067) : see reference to function template instantiation 'void MergeKeys<ITCBScaleKey,FloatKey>(Control *,std::vector<_Ty> &,float)' being compiled
+                 with
+                 [
+                     _Ty=FloatKey
+                 ]
+     1>C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\NifCommon\AnimKey.h(130): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         ImportCollision.cpp
+     1>..\NifImport\ImportCollision.cpp(332): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportCollision.cpp(583): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportCollision.cpp(653): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         ImportLights.cpp
+         ImportMeshAndSkin.cpp
+     1>..\NifImport\ImportMeshAndSkin.cpp(93): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(155): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(198): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(199): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(295): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(326): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(327): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(328): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(332): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(333): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(385): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(407): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(462): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(466): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(479): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(519): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(528): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(545): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(699): warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\NifImport\ImportMeshAndSkin.cpp(776): warning C4267: 'argument' : conversion from 'size_t' to 'DWORD', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(163): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(247) : see reference to function template instantiation 'std::_Pair_base<_Ty1,_Ty2>::_Pair_base<_Ty,_Ty>(_Other1 &&,_Other2 &&)' being compiled
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int,
+                     _Ty=unsigned __int64,
+                     _Other1=unsigned __int64,
+                     _Other2=unsigned __int64
+                 ]
+                 ..\NifImport\ImportMeshAndSkin.cpp(310) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<unsigned __int64,unsigned __int64>(_Other1 &&,_Other2 &&)' being compiled
+                 with
+                 [
+                     _Ty1=int,
+                     _Ty2=int,
+                     _Other1=unsigned __int64,
+                     _Other2=unsigned __int64
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(163): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         ImportMtlAndTex.cpp
+     1>..\NifImport\ImportMtlAndTex.cpp(491): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>..\NifImport\ImportMtlAndTex.cpp(716): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         ImportSkeleton.cpp
+     1>..\NifImport\ImportSkeleton.cpp(754): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         KfDialog.cpp
+         KFImporter.cpp
+     1>..\NifImport\KFImporter.cpp(45): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         KFMImporter.cpp
+     1>..\NifImport\KFMImporter.cpp(49): warning C4101: 'opts' : unreferenced local variable
+     1>..\NifImport\KFMImporter.cpp(85): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         MaxNifImport.cpp
+         NifDialog.cpp
+         NIFImport.cpp
+     1>..\NifImport\NIFImport.cpp(79): warning C4101: 'opts' : unreferenced local variable
+     1>..\NifImport\NIFImport.cpp(382): warning C4101: 'error' : unreferenced local variable
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D NIFPLUGINS /l"0x0409" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifCommon" /nologo /fo"x64\Release - Max x64\NifProps.res" ..\NifProps\NifProps.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D NIFPLUGINS /l"0x0409" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifCommon" /nologo /fo"x64\Release - Max x64\NifFurniture.res" ..\NifFurniture\NifFurniture.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D NIFPLUGINS /l"0x0409" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifCommon" /nologo /fo"x64\Release - Max x64\NifExport.res" ..\NifExport\NifExport.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D NIFPLUGINS /l"0x0409" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifCommon" /nologo /fo"x64\Release - Max x64\NifPlugins.res" ..\NifPlugins\NifPlugins.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D NIFPLUGINS /l"0x0409" /I"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifCommon" /nologo /fo"x64\Release - Max x64\MaxNifImport.res" ..\NifImport\MaxNifImport.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.dlu" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\x64\lib" /LIBPATH:"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\x64\Release" niflib.lib odbc32.lib odbccp32.lib comctl32.lib shlwapi.lib core.lib geom.lib gfx.lib mesh.lib maxutil.lib maxscrpt.lib paramblk2.lib bmm.lib mnmath.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\..\NifPlugins\NifPlugins.def" /MANIFEST /ManifestFile:"x64\Release - Max x64\NifPlugins.dlu.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"x64\Release - Max x64\NifPlugins.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /RELEASE /BASE:"0x16860000" /DYNAMICBASE:NO /IMPLIB:"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.lib" /MACHINE:X64 /DLL "x64\Release - Max x64\NifProps.res"
+         "x64\Release - Max x64\NifFurniture.res"
+         "x64\Release - Max x64\NifExport.res"
+         "x64\Release - Max x64\NifPlugins.res"
+         "x64\Release - Max x64\MaxNifImport.res"
+         "x64\Release - Max x64\nifProps.obj"
+         "x64\Release - Max x64\bhkBoxObj.obj"
+         "x64\Release - Max x64\bhkCapsuleObj.obj"
+         "x64\Release - Max x64\bhkHelperFuncs.obj"
+         "x64\Release - Max x64\bhkHelperInterface.obj"
+         "x64\Release - Max x64\bhkListObj.obj"
+         "x64\Release - Max x64\bhkProxyObj.obj"
+         "x64\Release - Max x64\bhkRigidBodyInterface.obj"
+         "x64\Release - Max x64\bhkRigidBodyModifer.obj"
+         "x64\Release - Max x64\bhkSphereObj.obj"
+         "x64\Release - Max x64\NifShader.obj"
+         "x64\Release - Max x64\shaderutil.obj"
+         "x64\Release - Max x64\BSDismemberSkin.obj"
+         "x64\Release - Max x64\NifFurniture.obj"
+         "x64\Release - Max x64\Animation.obj"
+         "x64\Release - Max x64\Coll.obj"
+         "x64\Release - Max x64\Config.obj"
+         "x64\Release - Max x64\Exporter.obj"
+         "x64\Release - Max x64\KfExport.obj"
+         "x64\Release - Max x64\Mesh.obj"
+         "x64\Release - Max x64\MtlTex.obj"
+         "x64\Release - Max x64\NifExport.obj"
+         "x64\Release - Max x64\Strips.obj"
+         "x64\Release - Max x64\Util.obj"
+         "x64\Release - Max x64\NvTriStrip.obj"
+         "x64\Release - Max x64\NvTriStripObjects.obj"
+         "x64\Release - Max x64\VertexCache.obj"
+         "x64\Release - Max x64\AnimKey.obj"
+         "x64\Release - Max x64\AppSettings.obj"
+         "x64\Release - Max x64\Hyperlinks.obj"
+         "x64\Release - Max x64\NifGui.obj"
+         "x64\Release - Max x64\NifPlugins.obj"
+         "x64\Release - Max x64\NifQHull.obj"
+         "x64\Release - Max x64\nimorph.obj"
+         "x64\Release - Max x64\niutils.obj"
+         "x64\Release - Max x64\DllEntry.obj"
+         "x64\Release - Max x64\pch.obj"
+         "x64\Release - Max x64\ImportAnimation.obj"
+         "x64\Release - Max x64\ImportCollision.obj"
+         "x64\Release - Max x64\ImportLights.obj"
+         "x64\Release - Max x64\ImportMeshAndSkin.obj"
+         "x64\Release - Max x64\ImportMtlAndTex.obj"
+         "x64\Release - Max x64\ImportSkeleton.obj"
+         "x64\Release - Max x64\KfDialog.obj"
+         "x64\Release - Max x64\KFImporter.obj"
+         "x64\Release - Max x64\KFMImporter.obj"
+         "x64\Release - Max x64\MaxNifImport.obj"
+         "x64\Release - Max x64\NifDialog.obj"
+         "x64\Release - Max x64\NIFImport.obj" /MACHINE:X64 
+            Creating library C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.lib and object C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.exp
+         NifPlugins_VC2008.vcxproj -> C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.dlu
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.dlu;#2" /manifest "x64\Release - Max x64\NifPlugins.dlu.intermediate.manifest"
+       PostBuildEvent:
+         if exist "\\plugcfg" (
+         if not exist "\\plugcfg\MaxNifTools.ini" (
+         copy "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\MaxNifTools.ini" "\\plugcfg\MaxNifTools.ini"
+         )
+         )
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Readme.txt" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\license.txt" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\ChangeLog.txt" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Authors.txt" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\MaxNifTools.ini" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         xcopy /D /Y /I "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\NifPlugins.dlu" "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release - Max x64\"
+         
+         :VCEnd
+         0 fil(er) kopierades
+         0 fil(er) kopierades
+         0 fil(er) kopierades
+         0 fil(er) kopierades
+         0 fil(er) kopierades
+         0 fil(er) kopierades
+       FinalizeBuildStatus:
+         Deleting file "x64\Release - Max x64\NifPlugins.unsuccessfulbuild".
+         Touching "x64\Release - Max x64\NifPlugins.lastbuildstate".
+     1>Done Building Project "C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\Build\NifPlugins_VC2008.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:51.97

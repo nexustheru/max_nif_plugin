@@ -5,3 +5,6 @@
 *.user
 Staging
 Temp
+Build/x64/Release - Max x64/vc100.pdb
+.gitignore
+NifPlugins_VC2010.opensdf
