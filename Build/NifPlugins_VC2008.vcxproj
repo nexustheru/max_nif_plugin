@@ -1036,14 +1036,13 @@ xcopy /D /Y /I "$(TargetPath)" "$(OutDir)"
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\x64\lib;C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\niflib\x64\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\x64\lib;C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\max_nif_plugin\x64\Release</AdditionalLibraryDirectories>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <TargetMachine>MachineX64</TargetMachine>
       <AdditionalDependencies>niflib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary>
-      </ImportLibrary>
+      <ImportLibrary>$(IntDir)$(ProjectName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Max x64|x64'">
