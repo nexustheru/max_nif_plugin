@@ -15,7 +15,7 @@ PROJECT( MaxUtility )
 #  Projects that are built with the same IDE (ie. Visual Studio 2005) will be
 #  added to the same Solution. For this reason all project need to have 
 #  unique names.
-
+#
 SET ( PROJECT_NAME_MAX_6  "UtilityMax6" )
 SET ( PROJECT_NAME_MAX_9  "UtilityMax9" )
 SET ( PROJECT_NAME_MAX_10 "UtilityMax2008" )
