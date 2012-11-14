@@ -1,0 +1,216 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+PROJECT( MaxUtility )
+
+# 3 d s   m a x
+
+# 3ds Max 9    | MAXSDK9  | Visual Studio 8.0 | 32 Bits | 64 Bits 
+# 3ds Max 2008 | MAXSDK10 | Visual Studio 8.0 | 32 Bits | 64 Bits 
+# 3ds Max 2009 | MAXSDK11 | Visual Studio 8.0 | 32 Bits | 64 Bits 
+# 3ds Max 2010 | MAXSDK12 | Visual Studio 9.0 | 32 Bits | 64 Bits 
+# 3ds Max 2011 | MAXSDK13 | Visual Studio 9.0 | 32 Bits | 64 Bits 
+# 3ds Max 2011 | MAXSDK14 | Visual Studio 10 | 32 Bits | 64 Bits 
+                                                      
+# Define the Project Name.
+#  Projects that are built with the same IDE (ie. Visual Studio 2005) will be
+#  added to the same Solution. For this reason all project need to have 
+#  unique names.
+
+SET ( PROJECT_NAME_MAX_6  "UtilityMax6" )
+SET ( PROJECT_NAME_MAX_9  "UtilityMax9" )
+SET ( PROJECT_NAME_MAX_10 "UtilityMax2008" )
+SET ( PROJECT_NAME_MAX_11 "UtilityMax2008" )
+SET ( PROJECT_NAME_MAX_12 "UtilityMax2010" )
+
+# Define the header libraries for each SDK
+
+SET ( MAXSDK6_HEADERS_DIR  "c:/Libraries/maxsdk/6/include" )
+SET ( MAXSDK9_HEADERS_DIR  "c:/Libraries/maxsdk/9/include" )
+SET ( MAXSDK10_HEADERS_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\include" )
+SET ( MAXSDK11_HEADERS_DIR "C:\Program Files (x86)\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\include" )
+SET ( MAXSDK12_HEADERS_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2012\maxsdk\include" )
+SET ( MAXSDK11_HEADERS_DIR "c:/Libraries/maxsdk/13/include" )
+SET ( MAXSDK12_HEADERS_DIR "c:/Libraries/maxsdk/14/include" )
+# Define the library files for each SDK, and platform. 64 bits lib path will replace
+# 32 bits lib path.
+
+# 32 BITS 
+
+SET ( MAXSDK6_LIBRARY_DIR  "c:/Libraries/maxsdk/6/lib" )
+SET ( MAXSDK9_LIBRARY_DIR  "c:/Libraries/maxsdk/9/lib" )
+SET ( MAXSDK10_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2012\maxsdk\lib" )
+SET ( MAXSDK11_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\lib" )
+SET ( MAXSDK12_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2012\maxsdk\include" )
+SET ( MAXSDK11_LIBRARY_DIR "c:/Libraries/maxsdk/13/lib" )
+SET ( MAXSDK12_LIBRARY_DIR "c:/Libraries/maxsdk/14/lib" )
+
+SET ( PROGRAM_FILES "c:\\Program Files (x86)" )
+
+IF ( CMAKE_CL_64 ) # 64 BITS
+
+	SET ( MAXSDK9_LIBRARY_DIR  "c:/Libraries/maxsdk/9/x64/lib" )
+	SET ( MAXSDK10_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2010 SDK\maxsdk\x64\lib" )
+	SET ( MAXSDK11_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\x64" )
+	SET ( MAXSDK12_LIBRARY_DIR "C:\Program Files (x86)\Autodesk\3ds Max 2012\maxsdk\x64\lib" )
+	SET ( MAXSDK11_LIBRARY_DIR "c:/Libraries/maxsdk/13/x64/lib" )
+	SET ( MAXSDK12_LIBRARY_DIR "c:/Libraries/maxsdk/14/x64/lib" )
+
+	SET ( PROGRAM_FILES "c:\\Program Files" )
+
+ENDIF ()
+
+# Add the source files.
+
+SET ( SOURCE_FILES
+	"dll.cpp"
+	"utility.cpp"
+)
+
+# Add the header files.
+
+SET ( HEADER_FILES
+	"utility.h"
+)
+
+# Add the resource and definition file.
+
+SET ( RESOURCE_FILES
+  "utility.rc"
+  "utility.def"
+)
+
+# Define the max libraries.
+
+SET( MAX_LIBS  "mnmath.lib"
+			   "poly.lib"
+			   "paramblk2.lib"
+			   "core.lib"
+			   "geom.lib"
+			   "mesh.lib"
+			   "maxutil.lib"
+			   "bmm.lib"
+			   "maxscrpt.lib"
+			   "comctl32.lib"
+)
+
+
+IF ( MSVC80 )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   9               #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK9_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK9_LIBRARY_DIR} )
+
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_9} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_9} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_9} PROPERTIES OUTPUT_NAME "Max9/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_9} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_9} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   2 0 0 8         #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK10_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK10_LIBRARY_DIR} )
+
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_10} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_10} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_10} PROPERTIES OUTPUT_NAME "Max2008/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_10} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_10} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+	
+ENDIF ( MSVC80 )
+
+IF ( MSVC90 )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   2 0 1 0         #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK12_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK12_LIBRARY_DIR} )
+	
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_12} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_12} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_12} PROPERTIES OUTPUT_NAME "Max2010/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_12} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_12} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )	
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+
+	ADD_CUSTOM_COMMAND( TARGET ${PROJECT_NAME_MAX_12} POST_BUILD COMMAND copy $(ConfigurationName)\\Max2010\\Utility.dlu "${PROGRAM_FILES}\\Autodesk\\3ds Max 2010\\plugins" )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   2 0 1 1         #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK13_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK13_LIBRARY_DIR} )
+	
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_13} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_13} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_13} PROPERTIES OUTPUT_NAME "Max2011/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_13} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_13} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )	
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+	
+	ADD_CUSTOM_COMMAND( TARGET ${PROJECT_NAME_MAX_13} POST_BUILD COMMAND copy $(ConfigurationName)\\Max2011\\Utility.dlu "${PROGRAM_FILES}\\Autodesk\\3ds Max 2011\\plugins" )
+	
+ENDIF ( MSVC90 )
+IF ( MSVC10 )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   2 0 1 0  VC 2010 #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK14_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK14_LIBRARY_DIR} )
+	
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_14} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_14} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_14} PROPERTIES OUTPUT_NAME "Max2010/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_14} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_14} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )	
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+
+	ADD_CUSTOM_COMMAND( TARGET ${PROJECT_NAME_MAX_14} POST_BUILD COMMAND copy $(ConfigurationName)\\Max2010\\Utility.dlu "${PROGRAM_FILES}\\Autodesk\\3ds Max 2010\\plugins" )
+
+	#######################################################
+	# P L U G I N   F O R   3 D S M A X   2 0 1 1         #
+	#######################################################
+	
+	INCLUDE_DIRECTORIES ( ${MAXSDK15_HEADERS_DIR} )
+	LINK_DIRECTORIES ( ${MAXSDK15_LIBRARY_DIR} )
+	
+	ADD_LIBRARY ( ${PROJECT_NAME_MAX_15} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} )
+	TARGET_LINK_LIBRARIES( ${PROJECT_NAME_MAX_15} ${MAX_LIBS} )
+
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_15} PROPERTIES OUTPUT_NAME "Max2011/Utility" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_15} PROPERTIES SUFFIX ".dlu" )
+	SET_TARGET_PROPERTIES( ${PROJECT_NAME_MAX_15} PROPERTIES CLEAN_DIRECT_OUTPUT 1 )	
+
+	SET ( LOCAL_WARNING_FLAGS /W3 )
+	SET ( LOCAL_RTTI_FLAGS /GR )
+	
+	ADD_CUSTOM_COMMAND( TARGET ${PROJECT_NAME_MAX_15} POST_BUILD COMMAND copy $(ConfigurationName)\\Max2011\\Utility.dlu "${PROGRAM_FILES}\\Autodesk\\3ds Max 2011\\plugins" )
+	
+ENDIF ( MSVC10 )
